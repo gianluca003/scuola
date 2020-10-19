@@ -159,7 +159,7 @@ public class Matrice {
 		
 		int i,j;
 		
-		System.err.println("\nI numeri pari sono:");
+		System.out.println("\nI numeri pari sono:");
 		
 		for(i=0,j=0; i<m1.length; i++, j++)   //Primo 'for' cerca i numeri pari nella prima matrice nella diagonale 1
 			if(m1[i][j]%2==0)
@@ -169,14 +169,14 @@ public class Matrice {
 			if(m2[i][j]%2==0)
 				System.out.println(m2[i][j]+"("+i+","+j+")"+" nel secondo vettore");
 		
-		System.err.println("\nI numeri dispari sono:");
+		System.out.println("\nI numeri dispari sono:");
 		
 		for(i=m1.length-1,j=i; i>=0; i--, j--) //terzo 'for' cerca i numeri dispari nella prima matrice nella diagonale 2
-			if(m1[i][j]%2==0)
+			if(m1[i][j]%2!=0)
 				System.out.println(m1[i][j]+"("+i+","+j+")"+" nel primo vettore");
 		
 		for(i=m2.length-1, j=i; i>=0; i--, j--)//quarto 'for' cerca i numeri dispari nella seconda matrice nella diagonale 2
-			if(m2[i][j]%2==0)
+			if(m2[i][j]%2!=0)
 				System.out.println(m2[i][j]+"("+i+","+j+")"+" nel secondo vettore");
 	}
 
@@ -216,13 +216,13 @@ public class Matrice {
 					System.out.println("\nScegli un opzione");
 					System.out.println("1: caricamento casuale delle matrici (valori da 1 a 50) e visualizzazione delle stesse");
 					System.out.println("2: richiesta della riga della prima matrice e richiesta riga della seconda matrice\r\n" + 
-							"di cui si vuole conoscere il massimo e il minimo,");
+							"   i cui si vuole conoscere il massimo e il minimo,");
 					System.out.println("3: richiesta della riga della prima matrice e della riga della seconda matrice e calcolare\r\n" + 
-							"la media aritmetica");
+							"   la media aritmetica");
 					System.out.println("4: confrontare i valori delle diagonali delle 2 matrici, e visualizzare le occorrenze\r\n"+ 
-							"con le rispettive coordinate specificando di quale matrice.");
+							"   con le rispettive coordinate specificando di quale matrice.");
 					System.out.println("5: confrontare i valori delle prime diagonali delle 2 matrici\r\n"+
-							"e visualizzare i numeri pari e dispari con le rispettive coordinate specificando di quale matrice.\n");
+							"   e visualizzare i numeri pari e dispari con le rispettive coordinate specificando di quale matrice.\n");
 					
 					opzione=sc.nextInt();
 					
