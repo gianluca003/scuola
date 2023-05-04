@@ -1,0 +1,29 @@
+#loginPane{
+	-fx-background-color: rgb(230, 242, 255);
+}
+
+#aside{
+	-fx-background-color: rgb(179, 204, 255);
+}
+
+#listUser{
+	-fx-border-color: white;
+}
+
+#areaMsg{
+	-fx-background-color: rgb(179, 204, 255);
+}
+
+#sendButton{
+	-fx-border-color: rgb(0, 89, 179);
+	-fx-background-color: rgb(0, 89, 179);
+	-fx-border-radius:10%;
+	-fx-text-fill: rgb(255, 255, 255);
+}
+
+#sendButton:hover{
+	-fx-background-color: white;
+	-fx-border-color: rgb(0, 89, 179);
+	-fx-border-radius:10%;
+	-fx-text-fill: rgb(0, 89, 179);
+}
